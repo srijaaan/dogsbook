@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header fixed-top>
+        <img class="logo" src="logo.png" alt="Logo"/>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#random">Random</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#id">About</a></li>
+            </ul>
+            <a href="#contact"><button onclick="showctn()" class="ctnbtn">Contact Us</button></a>
+        </nav>
+    </header>
+    <div class="econtainer" id="econtainer">
+        <section class="home" id='home'>
+            <img class="illus" src="illus.svg" alt="">
+            <h1>Hello Hoomans !</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo voluptates dolores ipsam explicabo natus reprehenderit doloremque similique, blanditiis vero reiciendis ipsum dignissimos eaque, maxime laborum quis tempore! Voluptatum alias aperiam consectetur nihil quos repellendus doloremque atque commodi impedit officiis? Dignissimos maxime perferendis itaque debitis</p>
+        </section>
+        <section class="random" id="random">
+            <h1 style="padding:1rem 1rem">Randoms</h1>
+            <hr>
+            <div class="randimg">
+                <div class="card">
+                    <img src="1.png" alt="Avatar" style="width:30rem;height:auto;border-radius:20px">
+                    <div class="cardcontainer">
+                      <h2>John Doe</h2> 
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta inventore fugit enim quia assumenda amet laborum velit repellendus illum.</p> 
+                    </div>
+                  </div>
+                <div class="card">
+                    <img src="2.jpg" alt="Avatar" style="width:30rem;height:auto;border-radius:20px">
+                    <div class="cardcontainer">
+                      <h2>John Doe</h2> 
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta inventore fugit enim quia assumenda amet laborum velit repellendus illum.</p> 
+                    </div>
+                  </div>
+                <div class="card">
+                    <img src="3.jpg" alt="Avatar" style="width:30rem;height:auto;border-radius:20px">
+                    <div class="cardcontainer">
+                      <h2>John Doe</h2> 
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta inventore fugit enim quia assumenda amet laborum velit repellendus illum.</p> 
+                    </div>
+                  </div>    
+            </div>
+        </section>
+        <section class="about" id="id">
+          <h1>About</h1>
+          <hr>
+            <div class="abtcont" id="abtcont">
+              <img class="dp" src="dp1.png" alt="dog face">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente quidem officiis nihil amet optio aliquid iure sit ipsum. Nam nobis itaque non vitae blanditiis unde eveniet illum nemo totam. Ipsum perferendis odit earum minus praesentium modi dolore nam repudiandae provident, temporibus voluptatum atque quaerat doloremque dolorem officiis tenetur tempore explicabo rerum. Soluta dolor possimus hic quod veniam, illo sapiente maiores porro dolores libero doloribus vel quis pariatur nulla at? Culpa a quis fugit amet, quasi odio ullam veniam maxime ex perferendis quaerat illum, unde accusantium, eligendi fuga aut at. Nisi voluptatibus quasi harum, officiis quisquam ut necessitatibus eaque cupiditate. Lorem ipsum dolor, </p>
+              <img class="dp" src="dp2.png" alt="dog face">
+            </div>
+            <div class="abticn" id="abticn">
+              <i class="fab fa-twitter"><a class="link" href="">Twitter</a></i>
+              <i class="fab fa-facebook"><a class="link" href="">Facebook</a></i>
+              <i class="fab fa-instagram"><a class="link" href="">Instagram</a></i>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="contactcontainer">
+            <h1>Contact Us</h1>
+            <hr>
+            <div class="contact-box">
+              <div class="left"></div>
+              <div class="right">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" placeholder="Your Name">
+                <input type="text" class="field" placeholder="Your Email">
+                <input type="text" class="field" placeholder="Phone">
+                <textarea placeholder="Message" class="field"></textarea>
+                <button class="btn">Send</button>
+              </div>
+            </div>
+            <h3 class="footer">Made with Love ❤</h3>
+          </div>
+        </section>
+      </div>
+    <!-- Script-->
+    <script src="script.js"></script>
+</body>
+</html>
