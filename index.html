@@ -13,12 +13,12 @@
         <img class="logo" src="logo.png" alt="Logo"/>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#random">Random</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#id">About</a></li>
+                <li onclick="showecon('home')"><a href="#home">Home</a></li>
+                <li onclick="showecon('random')"><a href="#random">Random</a></li>
+                <li id="serbtn"><a href="#">Search</a></li>
+                <li onclick="showecon('id')"><a href="#id">About</a></li>
             </ul>
-            <a href="#contact"><button onclick="showctn()" class="ctnbtn">Contact Us</button></a>
+            <button class="ctnbtn" onclick="showecon('contact')"><a href="#contact">Contact Us</a></button>
         </nav>
     </header>
     <div class="econtainer" id="econtainer">
@@ -87,6 +87,9 @@
           </div>
         </section>
       </div>
+      <section class="search" id="search">
+
+      </section>
     <!-- Script-->
     <script src="script.js"></script>
 </body>

@@ -90,6 +90,15 @@ header nav ul li a:hover{
     transform: translateY(3px);
 }
 
+.ctnbtn a{
+    position: relative;
+    text-decoration: none;
+    color:aliceblue;
+    font-family: Montserrat;
+    font-weight:650;
+    font-size:1rem
+}
+
 section{
     height: 100vh;
     display:flex;
@@ -100,6 +109,7 @@ section{
 }
 
 .econtainer{
+    display:block;
     scroll-snap-type: y mandatory;
     overflow-y:scroll;
     height: 100vh;
@@ -370,6 +380,11 @@ textarea{
     margin-top:11rem;
     font-family: Montserrat;
     font-size:1rem 
+}
+
+.search{
+    display:none;
+    background-color: #fb8350;
 }
 
 
