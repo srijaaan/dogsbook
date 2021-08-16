@@ -25,4 +25,15 @@ function showecon(input){
     }
 }
 
+function showhome(){
+    parent = document.getElementById('home')
+    if(ser.style.display === 'block' && econ.style.display === 'none'){
+        econ.style.display = 'block';
+        ser.style.display = 'none';
+        parent.scrollIntoView();
+    }else{
+        parent.scrollIntoView();
+    }
+}
+
 
