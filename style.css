@@ -278,7 +278,7 @@ section{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("contact.jpeg") no-repeat center;
+	background: url("../img/contact.jpeg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
@@ -296,7 +296,7 @@ section{
 }
 
 .left{
-	background: url("contact.jpeg") no-repeat center;
+	background: url("../img/contact.jpeg") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
@@ -410,7 +410,7 @@ button {
   -ms-flex-pack: center;
       justify-content: center;
   font-family: 'Poppins', sans-serif;
-  background: url("../Searchs_130.png");
+  background: url("../img/Searchs_130.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100%;
