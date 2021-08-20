@@ -537,6 +537,19 @@ button {
   padding-left: 26px;
 }
 
+.dogcont {
+    background-color: $primary-color;
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px 600px;
+    border-radius: $border-radius;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.356);
+    img {
+     width: 300px;
+     height: 300px;
+     border-radius: $border-radius 0 0 $border-radius;
+    }
+
 @media screen and (max-width: 992px) {
   .s130 form .inner-form .input-field {
     height: 50px;
