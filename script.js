@@ -2,8 +2,8 @@
 var econ = document.getElementById('econtainer');
 var ser = document.getElementById('search');
 var serbtn = document.getElementById('serbtn')
-var dog = document.getElementById("searchtxt")
-
+var dog = document.getElementById('searchtxt')
+var form = document.getElementById('form')
 
 //navigation functions
 
@@ -27,7 +27,9 @@ function showecon(input){ //generalized navigation function
         parent.scrollIntoView();
     }
 }
+
 async function getimg(str, ref){
+
     let url = `https://api.thedogapi.com/v1/images/${ref}`
     let response = await fetch(url);
     let dimg = await response.json();
@@ -47,6 +49,7 @@ function fillarr(obj, arr){
 async function getBreeds(){
     var myHeaders = new Headers();
     let dogarr=[]
+    let str = ''
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("x-api-key", "83ab2b1b-19ba-4ad0-ac08-6a99e7502a18");
     var formdata = new FormData();
@@ -59,19 +62,35 @@ async function getBreeds(){
     let response = await fetch(url, requestOptions)
     let dres = await response.json();
     fillarr(dres, dogarr)
-}
+    
+    for(let i =0; i<dres.length; i++) {
+        var ref = dogarr[i].reference_image_id
+        let url2 = `https://api.thedogapi.com/v1/images/${ref}`
+        let response2 = await fetch(url2);
+        let dimg = await response2.json();
+        str = dimg.url;
+        
+        let dogcont = document.createElement('div')
+        dogcont.classList.add('dogcont')
+        let img = document.createElement('img')
+        img.setAttribute("id", "container__text_img")
+        img.src = str
+        let context = document.createElement('div')
+        context.classList.add('container__text')
+        let hi = document.createElement('h1')
+        hi.setAttribute("id", "container__text_h1")
+        hi.textContent = dogarr[i].name
+        let pi = document.createElement('p')
+        pi.setAttribute("id", "container__text_p")
+        pi.textContent = "Breed For : " + dogarr[i].bred_for
 
-for(let i=0; i<dres.length; i++){
-    let stringr=''
-    getimg(stringr, dogarr[i].reference_image_id )
-    console.log('from for', stringr)
-    var dogcont = document.createElement('div')
-    var dimg = document.createElement('img')
-    dimg.src = stringr
-    dogcont.className = 'dogcont'
-    search.appendChild(dogcont)
-    dogcont.appendChild(dimg)
-}
+        form.appendChild(dogcont)
+        dogcont.appendChild(img)
+        dogcont.appendChild(context)
+        context.appendChild(hi)
+        context.appendChild(pi)
+    }
 
+}
 
 
