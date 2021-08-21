@@ -393,6 +393,9 @@ textarea{
     font-size:1rem 
 }
 
+.search{
+    display:none;
+}
 
 input,
 button {
