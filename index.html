@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="randdog()">
     <header fixed-top>
         <img onclick="showecon('home')" class="logo" src="../img/logo.png" alt="Logo"/>
         <nav>
@@ -33,24 +33,30 @@
             <hr>
             <div class="randimg">
                 <div class="card">
-                    <img src="../img/1.png" alt="Avatar">
+                    <img id = "d1" src=" " alt="Avatar">
                     <div class="cardcontainer">
-                      <h2>John Doe</h2> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta inventore fugit enim quia assumenda amet laborum velit repellendus illum.</p> 
+                      <h2 id="dh1"></h2> 
+                      <p id="ph1.1"></p> 
+                      <p id="ph1.2"></p> 
+                      <p id="ph1.3"></p> 
                     </div>
                   </div>
                 <div class="card">
-                    <img src="../img/2.jpg" alt="Avatar">
+                    <img id="d2" src=" " alt="Avatar">
                     <div class="cardcontainer">
-                      <h2>John Doe</h2> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta inventore fugit enim quia assumenda amet laborum velit repellendus illum.</p> 
+                      <h2 id="dh2"></h2> 
+                      <p id='ph2.1'></p> 
+                      <p id='ph2.2'></p>
+                      <p id='ph2.3'></p>
                     </div>
                   </div>
                 <div class="card mobile">
-                    <img src="../img/3.jpg" alt="Avatar">
+                    <img id="d3" src=" " alt="Avatar">
                     <div class="cardcontainer">
-                      <h2>John Doe</h2> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta inventore fugit enim quia assumenda amet laborum velit repellendus illum.</p> 
+                      <h2 id="dh3"></h2> 
+                      <p id="ph3.1"></p> 
+                      <p id="ph3.2"></p>
+                      <p id="ph3.3"></p>
                     </div>
                   </div>    
             </div>
@@ -85,7 +91,7 @@
                 <button class="btn">Send</button>
               </div>
             </div>
-            <h3 class="footer">Made with Love for Dogss ❤</h3>
+            <h3 class="footer">Made with Love for Dogs ❤</h3>
           </div>
         </section>
       </div>
@@ -104,9 +110,6 @@
               <div class="input-field second-wrap">
                 <button class="btn-search" type="button" onclick="getBreeds()">SEARCH</button>
               </div>
-            </div>
-            
-        </div>
         </form>
       </section>
     <!-- Script-->
