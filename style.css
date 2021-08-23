@@ -326,7 +326,7 @@ section {
 }
 
 .left {
-  background: url("../img/contact.jpeg") no-repeat center;
+  background: url("./img/contact.jpeg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -442,7 +442,7 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  background: url("../img/Searchs_130.png");
+  background: url("./img/Searchs_130.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 100%;
