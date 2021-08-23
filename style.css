@@ -308,7 +308,7 @@ section {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("../img/contact.jpeg") no-repeat center;
+  background: url("img/contact.jpeg") no-repeat center;
   background-size: cover;
   filter: blur(50px);
   z-index: -1;
@@ -326,7 +326,7 @@ section {
 }
 
 .left {
-  background: url("./img/contact.jpeg") no-repeat center;
+  background: url("img/contact.jpeg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
